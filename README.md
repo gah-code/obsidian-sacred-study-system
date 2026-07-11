@@ -270,18 +270,17 @@ The finished workflow should move like this:
 
 ```mermaid
 flowchart LR
-
-A["Read Scripture"] --> B["Highlight Key Verses"]
-B --> C["Create Chapter Study"]
-C --> D["Extract Themes"]
-D --> E["Connect Catholic Doctrine"]
-E --> F["Add Historical Witness"]
-F --> G["Write Spiritual Reflection"]
-G --> H["Form Prayer"]
-H --> I["Create Writing Seed"]
-I --> J["Publish / Teach / Reuse"]
-J --> K["Index + Maintain"]
-K --> A
+  A[Read Scripture] --> B[Highlight Key Verses]
+  B --> C[Create Chapter Study]
+  C --> D[Extract Themes]
+  D --> E[Connect Catholic Doctrine]
+  E --> F[Add Historical Witness]
+  F --> G[Write Spiritual Reflection]
+  G --> H[Form Prayer]
+  H --> I[Create Writing Seed]
+  I --> J[Publish Teach Reuse]
+  J --> K[Index and Maintain]
+  K --> A
 ```
 
 ### Daily Study Flow
