@@ -125,16 +125,16 @@ Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
 
 ```mermaid
 graph LR
-  A["Scripture"] --> B["Highlighting"]
-  B --> C["Chapter Study"]
-  C --> D["Themes"]
-  D --> E["Doctrine"]
-  E --> F["Reflection"]
-  F --> G["Prayer"]
-  G --> H["Writing"]
-  H --> I["Teaching and Formation"]
-  I --> J["Index and Maintain"]
-  J --> A
+  scripture[Scripture] --> highlighting[Highlighting]
+  highlighting --> chapter_study[Chapter Study]
+  chapter_study --> themes[Themes]
+  themes --> doctrine[Doctrine]
+  doctrine --> reflection[Reflection]
+  reflection --> prayer[Prayer]
+  prayer --> writing[Writing]
+  writing --> teaching[Teaching and Formation]
+  teaching --> maintain[Index and Maintain]
+  maintain --> scripture
 ```
 
 ---
@@ -143,25 +143,25 @@ graph LR
 
 ```mermaid
 graph TD
-  A["0 GOD Vault"] --> B["00 Inbox"]
-  A --> C["01 Bible Study"]
-  A --> D["02 Catholic Teaching"]
-  A --> E["03 Prayer Life"]
-  A --> F["04 Apologetics"]
-  A --> G["05 Systems and Outputs"]
-  A --> H["07 Indexes and Maps"]
-  A --> I["99 Archive"]
+  vault[0 GOD Vault] --> inbox[00 Inbox]
+  vault --> bible_study[01 Bible Study]
+  vault --> catholic_teaching[02 Catholic Teaching]
+  vault --> prayer_life[03 Prayer Life]
+  vault --> apologetics[04 Apologetics]
+  vault --> systems_outputs[05 Systems and Outputs]
+  vault --> indexes_maps[07 Indexes and Maps]
+  vault --> archive[99 Archive]
 
-  B --> C
-  C --> D
-  C --> E
-  C --> F
-  D --> E
-  D --> F
-  E --> G
-  F --> G
-  G --> H
-  I --> H
+  inbox --> bible_study
+  bible_study --> catholic_teaching
+  bible_study --> prayer_life
+  bible_study --> apologetics
+  catholic_teaching --> prayer_life
+  catholic_teaching --> apologetics
+  prayer_life --> systems_outputs
+  apologetics --> systems_outputs
+  systems_outputs --> indexes_maps
+  archive --> indexes_maps
 ```
 
 ---
@@ -170,38 +170,38 @@ graph TD
 
 ```mermaid
 graph TD
-  A["01 Bible Study"] --> B["Books of Law"]
-  A --> C["Books of History"]
-  A --> D["Biblical Novellas"]
-  A --> E["Wisdom Books"]
-  A --> F["New Testament"]
-  A --> G["Bible Study Resources"]
+  bible_study[01 Bible Study] --> law[Books of Law]
+  bible_study --> history[Books of History]
+  bible_study --> novellas[Biblical Novellas]
+  bible_study --> wisdom[Wisdom Books]
+  bible_study --> new_testament[New Testament]
+  bible_study --> resources[Bible Study Resources]
 
-  B --> B1["Genesis"]
-  B --> B2["Exodus"]
-  B --> B3["Leviticus"]
-  B --> B4["Numbers"]
-  B --> B5["Deuteronomy"]
+  law --> genesis[Genesis]
+  law --> exodus[Exodus]
+  law --> leviticus[Leviticus]
+  law --> numbers[Numbers]
+  law --> deuteronomy[Deuteronomy]
 
-  C --> C1["Joshua"]
-  C --> C2["Judges"]
-  C --> C3["Ruth"]
-  C --> C4["Samuel"]
-  C --> C5["Kings"]
-  C --> C6["Chronicles"]
-  C --> C7["Ezra"]
+  history --> joshua[Joshua]
+  history --> judges[Judges]
+  history --> ruth[Ruth]
+  history --> samuel[Samuel]
+  history --> kings[Kings]
+  history --> chronicles[Chronicles]
+  history --> ezra[Ezra]
 
-  D --> D1["Tobit"]
-  D --> D2["Judith"]
-  D --> D3["Esther"]
-  D --> D4["Nehemiah"]
-  D --> D5["Maccabees"]
+  novellas --> tobit[Tobit]
+  novellas --> judith[Judith]
+  novellas --> esther[Esther]
+  novellas --> nehemiah[Nehemiah]
+  novellas --> maccabees[Maccabees]
 
-  E --> E1["Job"]
-  E --> E2["Psalms"]
-  E --> E3["Proverbs"]
+  wisdom --> job[Job]
+  wisdom --> psalms[Psalms]
+  wisdom --> proverbs[Proverbs]
 
-  F --> F1["Pauline Letters"]
+  new_testament --> pauline_letters[Pauline Letters]
 ```
 
 ---
@@ -210,30 +210,30 @@ graph TD
 
 ```mermaid
 graph TD
-  A["Bible Study Dashboard"] --> B["Books of Law Index"]
-  A --> C["Books of History Index"]
-  A --> D["Biblical Novellas Index"]
-  A --> E["Wisdom Books Index"]
-  A --> F["New Testament Index"]
-  A --> G["Templates Index"]
+  dashboard[Bible Study Dashboard] --> law_index[Books of Law Index]
+  dashboard --> history_index[Books of History Index]
+  dashboard --> novellas_index[Biblical Novellas Index]
+  dashboard --> wisdom_index[Wisdom Books Index]
+  dashboard --> new_testament_index[New Testament Index]
+  dashboard --> templates_index[Templates Index]
 
-  B --> B1["Book Indexes"]
-  C --> C1["Book Indexes"]
-  D --> D1["Book Indexes"]
-  E --> E1["Book Indexes"]
-  F --> F1["Pauline Letters Index"]
-  G --> G1["Reusable Templates"]
+  law_index --> law_books[Law Book Indexes]
+  history_index --> history_books[History Book Indexes]
+  novellas_index --> novella_books[Novella Book Indexes]
+  wisdom_index --> wisdom_books[Wisdom Book Indexes]
+  new_testament_index --> pauline_letters[Pauline Letters Index]
+  templates_index --> reusable_templates[Reusable Templates]
 
-  B1 --> H["Chapter Study Notes"]
-  C1 --> H
-  D1 --> H
-  E1 --> H
-  F1 --> H
+  law_books --> chapter_notes[Chapter Study Notes]
+  history_books --> chapter_notes
+  novella_books --> chapter_notes
+  wisdom_books --> chapter_notes
+  pauline_letters --> chapter_notes
 
-  H --> I["Themes"]
-  I --> J["Doctrine"]
-  J --> K["Prayer"]
-  K --> L["Writing Seeds"]
+  chapter_notes --> themes[Themes]
+  themes --> doctrine[Doctrine]
+  doctrine --> prayer[Prayer]
+  prayer --> writing_seeds[Writing Seeds]
 ```
 
 ---
@@ -242,29 +242,30 @@ graph TD
 
 ```mermaid
 graph TD
-  A["Templates Index"] --> B["Bible Chapter Study Template"]
-  A --> C["Book Index Template"]
-  A --> D["Highlight Guide Template"]
-  A --> E["Verse Note Template"]
-  A --> F["Devotional Note Template"]
-  A --> G["Theme Note Template"]
-  A --> H["Doctrine Note Template"]
-  A --> I["Prayer Reflection Template"]
-  A --> J["Writing Seed Template"]
+  templates_index[Templates Index] --> chapter_template[Bible Chapter Study Template]
+  templates_index --> book_index_template[Book Index Template]
+  templates_index --> highlight_template[Highlight Guide Template]
+  templates_index --> verse_template[Verse Note Template]
+  templates_index --> devotional_template[Devotional Note Template]
+  templates_index --> theme_template[Theme Note Template]
+  templates_index --> doctrine_template[Doctrine Note Template]
+  templates_index --> prayer_template[Prayer Reflection Template]
+  templates_index --> writing_template[Writing Seed Template]
 
-  B --> K["Chapter Study"]
-  D --> K
-  E --> K
-  F --> L["Prayer and Reflection"]
-  G --> M["Theme Development"]
-  H --> N["Catholic Teaching"]
-  I --> L
-  J --> O["Writing Output"]
+  chapter_template --> chapter_study[Chapter Study]
+  book_index_template --> chapter_study
+  highlight_template --> chapter_study
+  verse_template --> chapter_study
+  devotional_template --> prayer_reflection[Prayer and Reflection]
+  theme_template --> theme_development[Theme Development]
+  doctrine_template --> catholic_teaching[Catholic Teaching]
+  prayer_template --> prayer_reflection
+  writing_template --> writing_output[Writing Output]
 
-  K --> M
-  M --> N
-  N --> L
-  L --> O
+  chapter_study --> theme_development
+  theme_development --> catholic_teaching
+  catholic_teaching --> prayer_reflection
+  prayer_reflection --> writing_output
 ```
 
 ---
@@ -273,24 +274,24 @@ graph TD
 
 ```mermaid
 graph TD
-  A["Scripture Observation"] --> B["Theological Meaning"]
-  B --> C["Catholic Doctrine Connection"]
-  C --> D["Historical Witness"]
-  D --> E["Spiritual Application"]
-  E --> F["Prayer and Reflection"]
-  F --> G["Writing Seed"]
+  scripture_observation[Scripture Observation] --> theological_meaning[Theological Meaning]
+  theological_meaning --> doctrine_connection[Catholic Doctrine Connection]
+  doctrine_connection --> historical_witness[Historical Witness]
+  historical_witness --> spiritual_application[Spiritual Application]
+  spiritual_application --> prayer_reflection[Prayer and Reflection]
+  prayer_reflection --> writing_seed[Writing Seed]
 
-  G --> H["Blog Draft"]
-  G --> I["Apologetics Reply"]
-  G --> J["Instagram Comment"]
-  G --> K["Prayer Guide"]
-  G --> L["Teaching Note"]
+  writing_seed --> blog_draft[Blog Draft]
+  writing_seed --> apologetics_reply[Apologetics Reply]
+  writing_seed --> instagram_comment[Instagram Comment]
+  writing_seed --> prayer_guide[Prayer Guide]
+  writing_seed --> teaching_note[Teaching Note]
 
-  H --> M["Writing Index"]
-  I --> M
-  J --> M
-  K --> M
-  L --> M
+  blog_draft --> writing_index[Writing Index]
+  apologetics_reply --> writing_index
+  instagram_comment --> writing_index
+  prayer_guide --> writing_index
+  teaching_note --> writing_index
 ```
 
 ---
