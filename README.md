@@ -124,7 +124,7 @@ Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
 ## Sacred Study Pipeline
 
 ```mermaid
-flowchart LR
+graph LR
   A["Scripture"] --> B["Highlighting"]
   B --> C["Chapter Study"]
   C --> D["Themes"]
@@ -142,7 +142,7 @@ flowchart LR
 ## Vault Architecture Flow
 
 ```mermaid
-flowchart TD
+graph TD
   A["0 GOD Vault"] --> B["00 Inbox"]
   A --> C["01 Bible Study"]
   A --> D["02 Catholic Teaching"]
@@ -169,7 +169,7 @@ flowchart TD
 ## Bible Study Section Map
 
 ```mermaid
-flowchart TD
+graph TD
   A["01 Bible Study"] --> B["Books of Law"]
   A --> C["Books of History"]
   A --> D["Biblical Novellas"]
@@ -209,7 +209,7 @@ flowchart TD
 ## Index System Flow
 
 ```mermaid
-flowchart TD
+graph TD
   A["Bible Study Dashboard"] --> B["Books of Law Index"]
   A --> C["Books of History Index"]
   A --> D["Biblical Novellas Index"]
@@ -241,7 +241,7 @@ flowchart TD
 ## Template Workflow
 
 ```mermaid
-flowchart TD
+graph TD
   A["Templates Index"] --> B["Bible Chapter Study Template"]
   A --> C["Book Index Template"]
   A --> D["Highlight Guide Template"]
@@ -272,7 +272,7 @@ flowchart TD
 ## Writing System Flow
 
 ```mermaid
-flowchart TD
+graph TD
   A["Scripture Observation"] --> B["Theological Meaning"]
   B --> C["Catholic Doctrine Connection"]
   C --> D["Historical Witness"]
