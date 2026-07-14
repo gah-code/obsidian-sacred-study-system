@@ -3,8 +3,9 @@
 > A sacred knowledge system for organizing Bible study, Catholic theology, prayer formation, apologetics, and theological writing inside Obsidian.
 
 ![Project Status](https://img.shields.io/badge/status-active-blue)
-![Current Phase](https://img.shields.io/badge/current_phase-2Q_Template_Foundation_Complete-orange)
-![Next Phase](https://img.shields.io/badge/next_phase-2R_Template_Integration-blueviolet)
+![Current Phase](https://img.shields.io/badge/current_phase-2U_README_Flowchart_Sync-orange)
+![Last Completed](https://img.shields.io/badge/last_completed-2T_Wisdom_and_New_Testament_Indexes-success)
+![Next Phase](https://img.shields.io/badge/next_phase-2V_Dashboard_Context_Flowcharts-blueviolet)
 ![Platform](https://img.shields.io/badge/platform-Obsidian-purple)
 ![Workflow](https://img.shields.io/badge/workflow-Sacred_Study_Pipeline-yellow)
 ![Maintenance](https://img.shields.io/badge/maintenance-weekly-green)
@@ -13,17 +14,21 @@
 
 ## Overview
 
-Obsidian Bible Study Cleanup is a long-term vault organization project focused on transforming a scattered Bible study folder into a structured, reusable, and spiritually fruitful Catholic study system.
+**Obsidian Bible Study Cleanup** is a long-term vault organization project focused on transforming a scattered Bible study folder into a structured, reusable, and spiritually fruitful Catholic study system.
 
 The project centers on the sacred workspace:
 
-    ~/Documents/My_Daily_Vault/Active/0 GOD
+```text
+~/Documents/My_Daily_Vault/Active/0 GOD
+```
 
 The goal is not only to clean files.
 
-The goal is to build a repeatable Sacred Study Pipeline:
+The goal is to build a repeatable **Sacred Study Pipeline**:
 
-    Scripture → Highlighting → Chapter Study → Themes → Doctrine → Reflection → Prayer → Writing → Teaching / Formation
+```text
+Scripture → Highlighting → Chapter Study → Themes → Doctrine → Reflection → Prayer → Writing → Teaching and Formation
+```
 
 This system is designed for:
 
@@ -38,115 +43,281 @@ This system is designed for:
 
 ---
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Current Status](#current-status)
+- [Current Vault Structure](#current-vault-structure)
+- [Sacred Study Pipeline](#sacred-study-pipeline)
+- [Vault Architecture Flow](#vault-architecture-flow)
+- [Bible Study Section Map](#bible-study-section-map)
+- [Index System Flow](#index-system-flow)
+- [Template Workflow](#template-workflow)
+- [Writing System Flow](#writing-system-flow)
+- [Current Navigation Notes](#current-navigation-notes)
+- [Current Index Coverage](#current-index-coverage)
+- [Template Foundation](#template-foundation)
+- [Active Naming Convention](#active-naming-convention)
+- [Highlighting System](#highlighting-system)
+- [Note Types](#note-types)
+- [Completed Project Phases](#completed-project-phases)
+- [Next Phase](#next-phase)
+- [Known Gaps](#known-gaps)
+- [Preservation Rules](#preservation-rules)
+- [Archive Areas](#archive-areas)
+- [Maintenance Rhythm](#maintenance-rhythm)
+- [Recommended Obsidian Setup](#recommended-obsidian-setup)
+- [Suggested Tags](#suggested-tags)
+- [Cathedral Model](#cathedral-model)
+
+---
+
 ## Current Status
 
-The project has moved beyond the early cleanup and naming phases.
+The project has moved beyond early cleanup and naming.
 
-The major Books of Law and Books of History have been standardized, book indexes have been created, section indexes have been created, the Bible Study Dashboard exists, and reusable templates have now been added.
+The major Books of Law and Books of History have been standardized. Book indexes, section indexes, the Bible Study Dashboard, reusable templates, Wisdom Books indexes, and New Testament indexes now exist.
 
 ### Current Project State
 
-    Phase 2Q — Template Foundation is complete.
+```text
+Phase 2T — Wisdom Books and New Testament Indexes is complete.
+```
+
+### Current Documentation Task
+
+```text
+Phase 2U — README Flowchart Sync
+```
 
 ### Next Project Phase
 
-    Phase 2R — Template Integration and Workflow Wiring
-
-The next phase should connect the new templates into the dashboard, PROJECT_CONTEXT, and practical study workflow.
-
----
-
-## Current Vault Snapshot
-
-Current root-level structure:
-
-    00 Inbox/
-    01 Bible Study/
-    02 Catholic Teaching/
-    03 Prayer Life/
-    04 Apologetics/
-    05 Systems & Outputs/
-    07 Indexes & Maps/
-    99 Archive/
-    Bible Timeline.md
-    README.md
-
-Current system folders:
-
-    05 Systems & Outputs/
-    ├── Apologetics Drafts/
-    ├── Blog Drafts/
-    ├── Cleanup Logs/
-    ├── Dashboards/
-    ├── Instagram Comments/
-    ├── Systems/
-    ├── Templates/
-    └── Writing Seeds/
-
-    07 Indexes & Maps/
-    ├── Bible Study Dashboard.md
-    ├── PROJECT_CONTEXT.md
-    └── Sacred Study System - Visual Node Map.md
-
-    99 Archive/
-    ├── Needs Review/
-    ├── Old Highlight Notes/
-    └── Unsorted Legacy Notes/
+```text
+Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
+```
 
 ---
 
-## Main Navigation Notes
+## Current Vault Structure
+
+```text
+0 GOD/
+├── 00 Inbox/
+├── 01 Bible Study/
+│   ├── Bible Study Resources/
+│   ├── Biblical Novellas/
+│   ├── Books of Law/
+│   ├── Books of History/
+│   ├── New Testament/
+│   └── Wisdom Books/
+├── 02 Catholic Teaching/
+├── 03 Prayer Life/
+├── 04 Apologetics/
+├── 05 Systems & Outputs/
+├── 07 Indexes & Maps/
+├── 99 Archive/
+└── README.md
+```
+
+---
+
+## Sacred Study Pipeline
+
+```mermaid
+flowchart LR
+  A["Scripture"] --> B["Highlighting"]
+  B --> C["Chapter Study"]
+  C --> D["Themes"]
+  D --> E["Doctrine"]
+  E --> F["Reflection"]
+  F --> G["Prayer"]
+  G --> H["Writing"]
+  H --> I["Teaching and Formation"]
+  I --> J["Index and Maintain"]
+  J --> A
+```
+
+---
+
+## Vault Architecture Flow
+
+```mermaid
+flowchart TD
+  A["0 GOD Vault"] --> B["00 Inbox"]
+  A --> C["01 Bible Study"]
+  A --> D["02 Catholic Teaching"]
+  A --> E["03 Prayer Life"]
+  A --> F["04 Apologetics"]
+  A --> G["05 Systems and Outputs"]
+  A --> H["07 Indexes and Maps"]
+  A --> I["99 Archive"]
+
+  B --> C
+  C --> D
+  C --> E
+  C --> F
+  D --> E
+  D --> F
+  E --> G
+  F --> G
+  G --> H
+  I --> H
+```
+
+---
+
+## Bible Study Section Map
+
+```mermaid
+flowchart TD
+  A["01 Bible Study"] --> B["Books of Law"]
+  A --> C["Books of History"]
+  A --> D["Biblical Novellas"]
+  A --> E["Wisdom Books"]
+  A --> F["New Testament"]
+  A --> G["Bible Study Resources"]
+
+  B --> B1["Genesis"]
+  B --> B2["Exodus"]
+  B --> B3["Leviticus"]
+  B --> B4["Numbers"]
+  B --> B5["Deuteronomy"]
+
+  C --> C1["Joshua"]
+  C --> C2["Judges"]
+  C --> C3["Ruth"]
+  C --> C4["Samuel"]
+  C --> C5["Kings"]
+  C --> C6["Chronicles"]
+  C --> C7["Ezra"]
+
+  D --> D1["Tobit"]
+  D --> D2["Judith"]
+  D --> D3["Esther"]
+  D --> D4["Nehemiah"]
+  D --> D5["Maccabees"]
+
+  E --> E1["Job"]
+  E --> E2["Psalms"]
+  E --> E3["Proverbs"]
+
+  F --> F1["Pauline Letters"]
+```
+
+---
+
+## Index System Flow
+
+```mermaid
+flowchart TD
+  A["Bible Study Dashboard"] --> B["Books of Law Index"]
+  A --> C["Books of History Index"]
+  A --> D["Biblical Novellas Index"]
+  A --> E["Wisdom Books Index"]
+  A --> F["New Testament Index"]
+  A --> G["Templates Index"]
+
+  B --> B1["Book Indexes"]
+  C --> C1["Book Indexes"]
+  D --> D1["Book Indexes"]
+  E --> E1["Book Indexes"]
+  F --> F1["Pauline Letters Index"]
+  G --> G1["Reusable Templates"]
+
+  B1 --> H["Chapter Study Notes"]
+  C1 --> H
+  D1 --> H
+  E1 --> H
+  F1 --> H
+
+  H --> I["Themes"]
+  I --> J["Doctrine"]
+  J --> K["Prayer"]
+  K --> L["Writing Seeds"]
+```
+
+---
+
+## Template Workflow
+
+```mermaid
+flowchart TD
+  A["Templates Index"] --> B["Bible Chapter Study Template"]
+  A --> C["Book Index Template"]
+  A --> D["Highlight Guide Template"]
+  A --> E["Verse Note Template"]
+  A --> F["Devotional Note Template"]
+  A --> G["Theme Note Template"]
+  A --> H["Doctrine Note Template"]
+  A --> I["Prayer Reflection Template"]
+  A --> J["Writing Seed Template"]
+
+  B --> K["Chapter Study"]
+  D --> K
+  E --> K
+  F --> L["Prayer and Reflection"]
+  G --> M["Theme Development"]
+  H --> N["Catholic Teaching"]
+  I --> L
+  J --> O["Writing Output"]
+
+  K --> M
+  M --> N
+  N --> L
+  L --> O
+```
+
+---
+
+## Writing System Flow
+
+```mermaid
+flowchart TD
+  A["Scripture Observation"] --> B["Theological Meaning"]
+  B --> C["Catholic Doctrine Connection"]
+  C --> D["Historical Witness"]
+  D --> E["Spiritual Application"]
+  E --> F["Prayer and Reflection"]
+  F --> G["Writing Seed"]
+
+  G --> H["Blog Draft"]
+  G --> I["Apologetics Reply"]
+  G --> J["Instagram Comment"]
+  G --> K["Prayer Guide"]
+  G --> L["Teaching Note"]
+
+  H --> M["Writing Index"]
+  I --> M
+  J --> M
+  K --> M
+  L --> M
+```
+
+---
+
+## Current Navigation Notes
 
 Primary dashboard:
 
-- 07 Indexes & Maps/Bible Study Dashboard.md
+- `07 Indexes & Maps/Bible Study Dashboard.md`
 
 Main section indexes:
 
-- 01 Bible Study/Books of Law/Books of Law Index.md
-- 01 Bible Study/Books of History/Books of History Index.md
-- 01 Bible Study/Biblical Novellas/Biblical Novellas Index.md
+- `01 Bible Study/Books of Law/Books of Law Index.md`
+- `01 Bible Study/Books of History/Books of History Index.md`
+- `01 Bible Study/Biblical Novellas/Biblical Novellas Index.md`
+- `01 Bible Study/Wisdom Books/Wisdom Books Index.md`
+- `01 Bible Study/New Testament/New Testament Index.md`
 
 Project maps:
 
-- 07 Indexes & Maps/PROJECT_CONTEXT.md
-- 07 Indexes & Maps/Sacred Study System - Visual Node Map.md
+- `07 Indexes & Maps/PROJECT_CONTEXT.md`
+- `07 Indexes & Maps/Sacred Study System - Visual Node Map.md`
+- `07 Indexes & Maps/Bible Timeline.md`
 
----
+Template map:
 
-## Current Working Folder Architecture
-
-This reflects the current working structure.
-
-    0 GOD/
-    ├── 00 Inbox/
-    ├── 01 Bible Study/
-    │   ├── Biblical Novellas/
-    │   │   ├── Maccabees/
-    │   │   └── Tobit/
-    │   ├── Books of Law/
-    │   │   ├── 1 Genesis/
-    │   │   ├── 2 Exodus/
-    │   │   ├── 3 Leviticus/
-    │   │   ├── 4 Numbers/
-    │   │   └── 5 Deuteronomy/
-    │   └── Books of History/
-    │       ├── 6 Joshua/
-    │       ├── 7 Judges/
-    │       ├── 8 Ruth/
-    │       ├── 9 1 Samuel/
-    │       ├── 10 2 Samuel/
-    │       ├── 11 1 Kings/
-    │       ├── 12 2 Kings/
-    │       ├── 13 1 Chronicles/
-    │       ├── 14 2 Chronicles/
-    │       └── 15 Ezra/
-    ├── 02 Catholic Teaching/
-    ├── 03 Prayer Life/
-    ├── 04 Apologetics/
-    ├── 05 Systems & Outputs/
-    ├── 07 Indexes & Maps/
-    └── 99 Archive/
+- `05 Systems & Outputs/Templates/Templates Index.md`
 
 ---
 
@@ -184,13 +355,27 @@ This reflects the current working structure.
 - Maccabees Index
 - Biblical Novellas Index
 
+### Wisdom Books
+
+- Job Index
+- Psalms Index
+- Proverbs Index
+- Wisdom Books Index
+
+### New Testament
+
+- New Testament Index
+- Pauline Letters Index
+
 ---
 
-## Current Template Foundation
+## Template Foundation
 
-Templates now live in:
+Templates live in:
 
-    05 Systems & Outputs/Templates/
+```text
+05 Systems & Outputs/Templates/
+```
 
 Current templates:
 
@@ -203,8 +388,7 @@ Current templates:
 - Theme Note Template.md
 - Verse Note Template.md
 - Writing Seed Template.md
-
-These templates support the next stage of the Sacred Study System.
+- Templates Index.md
 
 ---
 
@@ -212,7 +396,9 @@ These templates support the next stage of the Sacred Study System.
 
 The active chapter-note naming pattern is:
 
-    Book 00 - Chapter Study.md
+```text
+Book 00 - Chapter Study.md
+```
 
 Examples:
 
@@ -237,6 +423,8 @@ Other note examples:
 - Exodus 13-02 and 13-13 - Verse Note.md
 - Kings - Top Chapters.md
 - Samuel Books Overview.md
+- Psalms Prayer Map.md
+- Romans 11 - Study Note.md
 
 ### Naming Rules
 
@@ -260,16 +448,6 @@ The project uses a four-color Bible highlighting system.
 | Blue | Doctrine, theology, prophecy, Christological meaning |
 | Green | Virtue, wisdom, obedience, spiritual growth |
 | Red | Sin, judgment, warning, suffering, conflict |
-
-Highlight flow:
-
-    Bible Highlighting System
-    → Chapter Highlight Guide
-    → Chapter Study Note
-    → Theme Notes
-    → Doctrine Notes
-    → Prayer and Reflection
-    → Writing Seeds
 
 ---
 
@@ -315,23 +493,29 @@ Highlight flow:
 | 2O | Biblical Novellas and Remaining History Indexes | Complete |
 | 2P | Documentation Sync | Complete |
 | 2Q | Template Foundation | Complete |
+| 2R | Template Integration and Workflow Wiring | Complete |
+| 2S | Root-Level Bible Study Classification | Complete |
+| 2T | Wisdom Books and New Testament Indexes | Complete |
+| 2U | README Flowchart Sync | Current |
 
 ---
 
 ## Next Phase
 
-## Phase 2R — Template Integration and Workflow Wiring
+## Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
 
-The next phase should connect the new templates to the working system.
+The next phase should update the two core navigation notes with the same visual flow logic now added to this README:
+
+- `07 Indexes & Maps/Bible Study Dashboard.md`
+- `07 Indexes & Maps/PROJECT_CONTEXT.md`
 
 Recommended tasks:
 
-- Add template links to Bible Study Dashboard.
-- Add template links to PROJECT_CONTEXT.
-- Create a Templates Index.
-- Add short instructions for when to use each template.
-- Decide which templates should be copied manually and which may later be used with Obsidian Templates or Templater.
-- Prepare for future Dataview or tag-based dashboards.
+- Add a compact Sacred Study Pipeline flowchart to the dashboard.
+- Add a Bible section map to the dashboard.
+- Add a template workflow section.
+- Add a maintenance flow section.
+- Update PROJECT_CONTEXT so it matches the README state.
 
 ---
 
@@ -339,12 +523,11 @@ Recommended tasks:
 
 These are not problems. They are simply known gaps in the current vault.
 
-- 1 Samuel 06 - Chapter Study.md does not currently exist.
-- 1 Chronicles 16 through 20 do not currently exist.
-- 2 Chronicles currently has a highlights note and index, but no chapter study notes in the current snapshot.
-- Some root-level Bible Study notes still need classification later.
-- 00 Inbox still contains raw notes that need future review.
-- New templates exist, but they still need to be wired into dashboard and workflow notes.
+- `1 Samuel 06 - Chapter Study.md` does not currently exist.
+- `1 Chronicles 16` through `1 Chronicles 20` do not currently exist.
+- `2 Chronicles` currently has a highlights note and index, but no chapter study notes in the current snapshot.
+- `00 Inbox` still contains raw notes that need future review.
+- Templates exist and are indexed, but dashboard and project context can still be improved with stronger workflow instructions.
 
 ---
 
@@ -357,8 +540,8 @@ These are not problems. They are simply known gaps in the current vault.
 - Do not invent missing chapter notes.
 - Move slowly by phase.
 - Re-export file and folder snapshots after each major phase.
-- Prefer mv -n when renaming.
-- Prefer mkdir -p when creating folders.
+- Prefer `mv -n` when renaming.
+- Prefer `mkdir -p` when creating folders.
 
 ---
 
@@ -366,12 +549,12 @@ These are not problems. They are simply known gaps in the current vault.
 
 Current archive review folders include:
 
-- 99 Archive/Needs Review/Bible Book Notes
-- 99 Archive/Needs Review/Chapter Naming
-- 99 Archive/Needs Review/Generated Content
-- 99 Archive/Needs Review/Possible Duplicates
-- 99 Archive/Old Highlight Notes
-- 99 Archive/Unsorted Legacy Notes
+- `99 Archive/Needs Review/Bible Book Notes`
+- `99 Archive/Needs Review/Chapter Naming`
+- `99 Archive/Needs Review/Generated Content`
+- `99 Archive/Needs Review/Possible Duplicates`
+- `99 Archive/Old Highlight Notes`
+- `99 Archive/Unsorted Legacy Notes`
 
 ---
 
@@ -417,32 +600,32 @@ Useful Obsidian features and plugins for this project:
 
 ## Suggested Tags
 
-- #bible-study
-- #chapter-study
-- #highlight-guide
-- #book-overview
-- #introduction
-- #devotional
-- #verse-note
-- #theme-note
-- #doctrine-note
-- #prayer-reflection
-- #writing-seed
-- #blog-draft
-- #needs-review
-- #archive-candidate
+- `#bible-study`
+- `#chapter-study`
+- `#highlight-guide`
+- `#book-overview`
+- `#introduction`
+- `#devotional`
+- `#verse-note`
+- `#theme-note`
+- `#doctrine-note`
+- `#prayer-reflection`
+- `#writing-seed`
+- `#blog-draft`
+- `#needs-review`
+- `#archive-candidate`
 
 ---
 
 ## Suggested Status Labels
 
-- status/raw
-- status/review
-- status/master
-- status/archived
-- status/template
-- status/polished
-- status/published
+- `status/raw`
+- `status/review`
+- `status/master`
+- `status/archived`
+- `status/template`
+- `status/polished`
+- `status/published`
 
 ---
 
@@ -450,16 +633,18 @@ Useful Obsidian features and plugins for this project:
 
 This project should feel like a cathedral-library:
 
-    Inbox = the open courtyard
-    Bible Study = the nave
-    Highlights = the stained glass
-    Catholic Teaching = the columns
-    Prayer Life = the altar
-    Apologetics = the defense wall
-    Systems and Outputs = the workshop
-    Indexes and Maps = the front door
-    Templates = the tools of the craftsman
-    Archive = the preserved stonework
+```text
+Inbox = the open courtyard
+Bible Study = the nave
+Highlights = the stained glass
+Catholic Teaching = the columns
+Prayer Life = the altar
+Apologetics = the defense wall
+Systems and Outputs = the workshop
+Indexes and Maps = the front door
+Templates = the tools of the craftsman
+Archive = the preserved stonework
+```
 
 The finished system should not only hold notes.
 
