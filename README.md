@@ -1,11 +1,11 @@
 # Obsidian Bible Study Cleanup
 
-> A sacred knowledge system for organizing Bible study, Catholic theology, prayer formation, apologetics, and theological writing inside Obsidian.
+> A sacred knowledge system for organizing Bible study, Catholic theology, prayer formation, apologetics, devotional life, and theological writing inside Obsidian.
 
 ![Project Status](https://img.shields.io/badge/status-active-blue)
-![Current Phase](https://img.shields.io/badge/current_phase-2U_README_Flowchart_Sync-orange)
-![Last Completed](https://img.shields.io/badge/last_completed-2T_Wisdom_and_New_Testament_Indexes-success)
-![Next Phase](https://img.shields.io/badge/next_phase-2V_Dashboard_Context_Flowcharts-blueviolet)
+![Current Phase](https://img.shields.io/badge/current_phase-3E_Prayer_Note_Name_Cleanup-orange)
+![Last Completed](https://img.shields.io/badge/last_completed-3E_Prayer_Note_Renames-success)
+![Next Phase](https://img.shields.io/badge/next_phase-3F_Liturgy_Note_Name_Cleanup-blueviolet)
 ![Platform](https://img.shields.io/badge/platform-Obsidian-purple)
 ![Workflow](https://img.shields.io/badge/workflow-Sacred_Study_Pipeline-yellow)
 ![Maintenance](https://img.shields.io/badge/maintenance-weekly-green)
@@ -37,6 +37,9 @@ This system is designed for:
 - Chapter-by-chapter Scripture notes
 - Theological reflection
 - Prayer formation
+- Divine Intimacy journaling
+- Liturgy and feast-day study
+- Catholic doctrine notes
 - Apologetics writing
 - Blog and social post development
 - Long-term spiritual growth
@@ -51,13 +54,15 @@ This system is designed for:
 - [Sacred Study Pipeline](#sacred-study-pipeline)
 - [Vault Architecture Flow](#vault-architecture-flow)
 - [Bible Study Section Map](#bible-study-section-map)
+- [Prayer Life Flow](#prayer-life-flow)
+- [Writing System Flow](#writing-system-flow)
 - [Index System Flow](#index-system-flow)
 - [Template Workflow](#template-workflow)
-- [Writing System Flow](#writing-system-flow)
 - [Current Navigation Notes](#current-navigation-notes)
 - [Current Index Coverage](#current-index-coverage)
+- [Current Cleanup Audits](#current-cleanup-audits)
 - [Template Foundation](#template-foundation)
-- [Active Naming Convention](#active-naming-convention)
+- [Active Naming Conventions](#active-naming-conventions)
 - [Highlighting System](#highlighting-system)
 - [Note Types](#note-types)
 - [Completed Project Phases](#completed-project-phases)
@@ -68,32 +73,37 @@ This system is designed for:
 - [Maintenance Rhythm](#maintenance-rhythm)
 - [Recommended Obsidian Setup](#recommended-obsidian-setup)
 - [Suggested Tags](#suggested-tags)
+- [Suggested Status Labels](#suggested-status-labels)
 - [Cathedral Model](#cathedral-model)
 
 ---
 
 ## Current Status
 
-The project has moved beyond early cleanup and naming.
+The project has moved beyond the early Bible folder cleanup and into system-wide navigation, indexes, prayer organization, audit workflows, and naming cleanup.
 
-The major Books of Law and Books of History have been standardized. Book indexes, section indexes, the Bible Study Dashboard, reusable templates, Wisdom Books indexes, and New Testament indexes now exist.
+The major Books of Law and Books of History have been standardized. Book indexes, section indexes, the Bible Study Dashboard, reusable templates, Wisdom Books indexes, New Testament indexes, Prayer Life indexes, Catholic Teaching indexes, Apologetics indexes, and Systems & Outputs indexes now exist.
+
+The Inbox has been drained and classified into the working vault structure.
+
+Divine Intimacy notes have been renamed into cleaner patterns, and Prayer notes have been cleaned from underscore-heavy filenames into readable Obsidian titles.
 
 ### Current Project State
 
 ```text
-Phase 2T — Wisdom Books and New Testament Indexes is complete.
+Phase 3E — Prayer Note Name Cleanup is complete.
 ```
 
-### Current Documentation Task
+### Current Cleanup Layer
 
 ```text
-Phase 2U — README Flowchart Sync
+Prayer Life cleanup is active.
 ```
 
 ### Next Project Phase
 
 ```text
-Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
+Phase 3F — Liturgy Note Name Cleanup
 ```
 
 ---
@@ -112,8 +122,22 @@ Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
 │   └── Wisdom Books/
 ├── 02 Catholic Teaching/
 ├── 03 Prayer Life/
+│   ├── Journal/
+│   │   └── Divine Intimacy/
+│   │       └── Notes/
+│   ├── Liturgy/
+│   ├── Prayer/
+│   └── Rosary/
 ├── 04 Apologetics/
 ├── 05 Systems & Outputs/
+│   ├── Apologetics Drafts/
+│   ├── Blog Drafts/
+│   ├── Cleanup Logs/
+│   ├── Dashboards/
+│   ├── Instagram Comments/
+│   ├── Systems/
+│   ├── Templates/
+│   └── Writing Seeds/
 ├── 07 Indexes & Maps/
 ├── 99 Archive/
 └── README.md
@@ -124,16 +148,16 @@ Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
 ## Sacred Study Pipeline
 
 ```mermaid
-graph LR
-  scripture[Scripture] --> highlighting[Highlighting]
-  highlighting --> chapter_study[Chapter Study]
-  chapter_study --> themes[Themes]
-  themes --> doctrine[Doctrine]
-  doctrine --> reflection[Reflection]
-  reflection --> prayer[Prayer]
-  prayer --> writing[Writing]
-  writing --> teaching[Teaching and Formation]
-  teaching --> maintain[Index and Maintain]
+flowchart LR
+  scripture["Scripture"] --> highlighting["Highlighting"]
+  highlighting --> chapter_study["Chapter Study"]
+  chapter_study --> themes["Themes"]
+  themes --> doctrine["Doctrine"]
+  doctrine --> reflection["Reflection"]
+  reflection --> prayer["Prayer"]
+  prayer --> writing["Writing"]
+  writing --> teaching["Teaching and Formation"]
+  teaching --> maintain["Index and Maintain"]
   maintain --> scripture
 ```
 
@@ -142,22 +166,29 @@ graph LR
 ## Vault Architecture Flow
 
 ```mermaid
-graph TD
-  vault[0 GOD Vault] --> inbox[00 Inbox]
-  vault --> bible_study[01 Bible Study]
-  vault --> catholic_teaching[02 Catholic Teaching]
-  vault --> prayer_life[03 Prayer Life]
-  vault --> apologetics[04 Apologetics]
-  vault --> systems_outputs[05 Systems and Outputs]
-  vault --> indexes_maps[07 Indexes and Maps]
-  vault --> archive[99 Archive]
+flowchart TD
+  vault["0 GOD Vault"] --> inbox["00 Inbox"]
+  vault --> bible_study["01 Bible Study"]
+  vault --> catholic_teaching["02 Catholic Teaching"]
+  vault --> prayer_life["03 Prayer Life"]
+  vault --> apologetics["04 Apologetics"]
+  vault --> systems_outputs["05 Systems and Outputs"]
+  vault --> indexes_maps["07 Indexes and Maps"]
+  vault --> archive["99 Archive"]
 
   inbox --> bible_study
+  inbox --> catholic_teaching
+  inbox --> prayer_life
+  inbox --> apologetics
+  inbox --> systems_outputs
+
   bible_study --> catholic_teaching
   bible_study --> prayer_life
   bible_study --> apologetics
+
   catholic_teaching --> prayer_life
   catholic_teaching --> apologetics
+
   prayer_life --> systems_outputs
   apologetics --> systems_outputs
   systems_outputs --> indexes_maps
@@ -169,103 +200,76 @@ graph TD
 ## Bible Study Section Map
 
 ```mermaid
-graph TD
-  bible_study[01 Bible Study] --> law[Books of Law]
-  bible_study --> history[Books of History]
-  bible_study --> novellas[Biblical Novellas]
-  bible_study --> wisdom[Wisdom Books]
-  bible_study --> new_testament[New Testament]
-  bible_study --> resources[Bible Study Resources]
+flowchart TD
+  bible_study["01 Bible Study"] --> resources["Bible Study Resources"]
+  bible_study --> law["Books of Law"]
+  bible_study --> history["Books of History"]
+  bible_study --> novellas["Biblical Novellas"]
+  bible_study --> wisdom["Wisdom Books"]
+  bible_study --> new_testament["New Testament"]
 
-  law --> genesis[Genesis]
-  law --> exodus[Exodus]
-  law --> leviticus[Leviticus]
-  law --> numbers[Numbers]
-  law --> deuteronomy[Deuteronomy]
+  resources --> bible_resources_index["Bible Study Resources Index"]
 
-  history --> joshua[Joshua]
-  history --> judges[Judges]
-  history --> ruth[Ruth]
-  history --> samuel[Samuel]
-  history --> kings[Kings]
-  history --> chronicles[Chronicles]
-  history --> ezra[Ezra]
+  law --> genesis["Genesis"]
+  law --> exodus["Exodus"]
+  law --> leviticus["Leviticus"]
+  law --> numbers["Numbers"]
+  law --> deuteronomy["Deuteronomy"]
 
-  novellas --> tobit[Tobit]
-  novellas --> judith[Judith]
-  novellas --> esther[Esther]
-  novellas --> nehemiah[Nehemiah]
-  novellas --> maccabees[Maccabees]
+  history --> joshua["Joshua"]
+  history --> judges["Judges"]
+  history --> ruth["Ruth"]
+  history --> samuel["Samuel"]
+  history --> kings["Kings"]
+  history --> chronicles["Chronicles"]
+  history --> ezra["Ezra"]
 
-  wisdom --> job[Job]
-  wisdom --> psalms[Psalms]
-  wisdom --> proverbs[Proverbs]
+  novellas --> tobit["Tobit"]
+  novellas --> judith["Judith"]
+  novellas --> esther["Esther"]
+  novellas --> nehemiah["Nehemiah"]
+  novellas --> maccabees["Maccabees"]
 
-  new_testament --> pauline_letters[Pauline Letters]
+  wisdom --> job["Job"]
+  wisdom --> psalms["Psalms"]
+  wisdom --> proverbs["Proverbs"]
+
+  new_testament --> pauline_letters["Pauline Letters"]
 ```
 
 ---
 
-## Index System Flow
+## Prayer Life Flow
 
 ```mermaid
-graph TD
-  dashboard[Bible Study Dashboard] --> law_index[Books of Law Index]
-  dashboard --> history_index[Books of History Index]
-  dashboard --> novellas_index[Biblical Novellas Index]
-  dashboard --> wisdom_index[Wisdom Books Index]
-  dashboard --> new_testament_index[New Testament Index]
-  dashboard --> templates_index[Templates Index]
+flowchart TD
+  prayer_life["03 Prayer Life"] --> prayer_index["Prayer Life Index"]
+  prayer_life --> journal["Journal"]
+  prayer_life --> liturgy["Liturgy"]
+  prayer_life --> prayer["Prayer"]
+  prayer_life --> rosary["Rosary"]
 
-  law_index --> law_books[Law Book Indexes]
-  history_index --> history_books[History Book Indexes]
-  novellas_index --> novella_books[Novella Book Indexes]
-  wisdom_index --> wisdom_books[Wisdom Book Indexes]
-  new_testament_index --> pauline_letters[Pauline Letters Index]
-  templates_index --> reusable_templates[Reusable Templates]
+  journal --> journal_index["Journal Index"]
+  journal --> divine_intimacy["Divine Intimacy"]
+  divine_intimacy --> divine_intimacy_index["Divine Intimacy Index"]
+  divine_intimacy --> di_notes["DI Numbered Notes"]
+  divine_intimacy --> di_planners["2026 Planner Notes"]
 
-  law_books --> chapter_notes[Chapter Study Notes]
-  history_books --> chapter_notes
-  novella_books --> chapter_notes
-  wisdom_books --> chapter_notes
-  pauline_letters --> chapter_notes
+  prayer --> prayer_folder_index["Prayer Index"]
+  prayer --> personal_prayers["Personal Prayers"]
+  prayer --> prayer_methods["Prayer Methods"]
+  prayer --> jewish_roots_prayer["Jewish Roots of Prayer"]
 
-  chapter_notes --> themes[Themes]
-  themes --> doctrine[Doctrine]
-  doctrine --> prayer[Prayer]
-  prayer --> writing_seeds[Writing Seeds]
-```
+  liturgy --> liturgy_index["Liturgy Index"]
+  liturgy --> readings["Readings and Feasts"]
 
----
+  rosary --> rosary_index["Rosary Index"]
+  rosary --> mysteries["Rosary Mysteries and Devotion"]
 
-## Template Workflow
-
-```mermaid
-graph TD
-  templates_index[Templates Index] --> chapter_template[Bible Chapter Study Template]
-  templates_index --> book_index_template[Book Index Template]
-  templates_index --> highlight_template[Highlight Guide Template]
-  templates_index --> verse_template[Verse Note Template]
-  templates_index --> devotional_template[Devotional Note Template]
-  templates_index --> theme_template[Theme Note Template]
-  templates_index --> doctrine_template[Doctrine Note Template]
-  templates_index --> prayer_template[Prayer Reflection Template]
-  templates_index --> writing_template[Writing Seed Template]
-
-  chapter_template --> chapter_study[Chapter Study]
-  book_index_template --> chapter_study
-  highlight_template --> chapter_study
-  verse_template --> chapter_study
-  devotional_template --> prayer_reflection[Prayer and Reflection]
-  theme_template --> theme_development[Theme Development]
-  doctrine_template --> catholic_teaching[Catholic Teaching]
-  prayer_template --> prayer_reflection
-  writing_template --> writing_output[Writing Output]
-
-  chapter_study --> theme_development
-  theme_development --> catholic_teaching
-  catholic_teaching --> prayer_reflection
-  prayer_reflection --> writing_output
+  prayer_folder_index --> writing_seeds["Writing Seeds"]
+  divine_intimacy_index --> writing_seeds
+  liturgy_index --> writing_seeds
+  rosary_index --> writing_seeds
 ```
 
 ---
@@ -273,25 +277,91 @@ graph TD
 ## Writing System Flow
 
 ```mermaid
-graph TD
-  scripture_observation[Scripture Observation] --> theological_meaning[Theological Meaning]
-  theological_meaning --> doctrine_connection[Catholic Doctrine Connection]
-  doctrine_connection --> historical_witness[Historical Witness]
-  historical_witness --> spiritual_application[Spiritual Application]
-  spiritual_application --> prayer_reflection[Prayer and Reflection]
-  prayer_reflection --> writing_seed[Writing Seed]
+flowchart TD
+  scripture_observation["Scripture Observation"] --> central_truth["Central Truth"]
+  central_truth --> theological_meaning["Theological Meaning"]
+  theological_meaning --> doctrine_connection["Catholic Doctrine Connection"]
+  doctrine_connection --> historical_witness["Historical Witness"]
+  historical_witness --> spiritual_application["Spiritual Application"]
+  spiritual_application --> prayer_reflection["Prayer and Reflection"]
+  prayer_reflection --> writing_seed["Writing Seed"]
 
-  writing_seed --> blog_draft[Blog Draft]
-  writing_seed --> apologetics_reply[Apologetics Reply]
-  writing_seed --> instagram_comment[Instagram Comment]
-  writing_seed --> prayer_guide[Prayer Guide]
-  writing_seed --> teaching_note[Teaching Note]
+  writing_seed --> blog_draft["Blog Draft"]
+  writing_seed --> apologetics_reply["Apologetics Reply"]
+  writing_seed --> instagram_comment["Instagram Comment"]
+  writing_seed --> prayer_guide["Prayer Guide"]
+  writing_seed --> teaching_note["Teaching Note"]
 
-  blog_draft --> writing_index[Writing Index]
-  apologetics_reply --> writing_index
-  instagram_comment --> writing_index
-  prayer_guide --> writing_index
-  teaching_note --> writing_index
+  blog_draft --> outputs_index["Systems and Outputs Index"]
+  apologetics_reply --> outputs_index
+  instagram_comment --> outputs_index
+  prayer_guide --> outputs_index
+  teaching_note --> outputs_index
+```
+
+---
+
+## Index System Flow
+
+```mermaid
+flowchart TD
+  dashboard["Bible Study Dashboard"] --> bible_resources_index["Bible Study Resources Index"]
+  dashboard --> law_index["Books of Law Index"]
+  dashboard --> history_index["Books of History Index"]
+  dashboard --> novellas_index["Biblical Novellas Index"]
+  dashboard --> wisdom_index["Wisdom Books Index"]
+  dashboard --> new_testament_index["New Testament Index"]
+  dashboard --> prayer_life_index["Prayer Life Index"]
+  dashboard --> catholic_teaching_index["Catholic Teaching Index"]
+  dashboard --> apologetics_index["Apologetics Index"]
+  dashboard --> outputs_index["Systems and Outputs Index"]
+  dashboard --> templates_index["Templates Index"]
+
+  bible_resources_index --> study_resources["Reference Notes"]
+  law_index --> law_books["Law Book Indexes"]
+  history_index --> history_books["History Book Indexes"]
+  novellas_index --> novella_books["Novella Book Indexes"]
+  wisdom_index --> wisdom_books["Wisdom Book Indexes"]
+  new_testament_index --> pauline_letters["Pauline Letters Index"]
+
+  prayer_life_index --> prayer_indexes["Prayer Indexes"]
+  catholic_teaching_index --> doctrine_notes["Doctrine Notes"]
+  apologetics_index --> apologetics_notes["Apologetics Notes"]
+  outputs_index --> writing_outputs["Writing Outputs"]
+
+  templates_index --> reusable_templates["Reusable Templates"]
+```
+
+---
+
+## Template Workflow
+
+```mermaid
+flowchart TD
+  templates_index["Templates Index"] --> chapter_template["Bible Chapter Study Template"]
+  templates_index --> book_index_template["Book Index Template"]
+  templates_index --> highlight_template["Highlight Guide Template"]
+  templates_index --> verse_template["Verse Note Template"]
+  templates_index --> devotional_template["Devotional Note Template"]
+  templates_index --> theme_template["Theme Note Template"]
+  templates_index --> doctrine_template["Doctrine Note Template"]
+  templates_index --> prayer_template["Prayer Reflection Template"]
+  templates_index --> writing_template["Writing Seed Template"]
+
+  chapter_template --> chapter_study["Chapter Study"]
+  book_index_template --> navigation["Book Navigation"]
+  highlight_template --> highlighting["Highlighting"]
+  verse_template --> verse_note["Verse Note"]
+  devotional_template --> devotional["Devotional Note"]
+  theme_template --> theme_development["Theme Development"]
+  doctrine_template --> catholic_teaching["Catholic Teaching"]
+  prayer_template --> prayer_reflection["Prayer Reflection"]
+  writing_template --> writing_output["Writing Output"]
+
+  chapter_study --> theme_development
+  theme_development --> catholic_teaching
+  catholic_teaching --> prayer_reflection
+  prayer_reflection --> writing_output
 ```
 
 ---
@@ -302,27 +372,53 @@ Primary dashboard:
 
 - `07 Indexes & Maps/Bible Study Dashboard.md`
 
-Main section indexes:
-
-- `01 Bible Study/Books of Law/Books of Law Index.md`
-- `01 Bible Study/Books of History/Books of History Index.md`
-- `01 Bible Study/Biblical Novellas/Biblical Novellas Index.md`
-- `01 Bible Study/Wisdom Books/Wisdom Books Index.md`
-- `01 Bible Study/New Testament/New Testament Index.md`
-
 Project maps:
 
 - `07 Indexes & Maps/PROJECT_CONTEXT.md`
 - `07 Indexes & Maps/Sacred Study System - Visual Node Map.md`
 - `07 Indexes & Maps/Bible Timeline.md`
 
-Template map:
+Main Bible indexes:
 
+- `01 Bible Study/Bible Study Resources/Bible Study Resources Index.md`
+- `01 Bible Study/Books of Law/Books of Law Index.md`
+- `01 Bible Study/Books of History/Books of History Index.md`
+- `01 Bible Study/Biblical Novellas/Biblical Novellas Index.md`
+- `01 Bible Study/Wisdom Books/Wisdom Books Index.md`
+- `01 Bible Study/New Testament/New Testament Index.md`
+- `01 Bible Study/New Testament/Pauline Letters/Pauline Letters Index.md`
+
+Prayer Life indexes:
+
+- `03 Prayer Life/Prayer Life Index.md`
+- `03 Prayer Life/Journal/Journal Index.md`
+- `03 Prayer Life/Journal/Divine Intimacy/Divine Intimacy Index.md`
+- `03 Prayer Life/Liturgy/Liturgy Index.md`
+- `03 Prayer Life/Prayer/Prayer Index.md`
+- `03 Prayer Life/Rosary/Rosary Index.md`
+
+Doctrine, apologetics, and output indexes:
+
+- `02 Catholic Teaching/Catholic Teaching Index.md`
+- `04 Apologetics/Apologetics Index.md`
+- `05 Systems & Outputs/Systems & Outputs Index.md`
+- `05 Systems & Outputs/Blog Drafts/Blog Drafts Index.md`
+- `05 Systems & Outputs/Apologetics Drafts/Apologetics Drafts Index.md`
+- `05 Systems & Outputs/Instagram Comments/Instagram Comments Index.md`
+- `05 Systems & Outputs/Systems/Systems Index.md`
 - `05 Systems & Outputs/Templates/Templates Index.md`
+- `05 Systems & Outputs/Writing Seeds/Writing Seeds Index.md`
 
 ---
 
 ## Current Index Coverage
+
+### Bible Study Resources
+
+- Bible Study Resources Index
+- Catholic Bible Translations
+- Literary Type Map for the Entire Bible
+- Septuagint
 
 ### Books of Law
 
@@ -368,6 +464,81 @@ Template map:
 - New Testament Index
 - Pauline Letters Index
 
+### Catholic Teaching
+
+- Catholic Teaching Index
+- Charisms
+- Christ - Fulfillment of Old Testament Law and Prophecy
+- Confession
+- Divine Providence
+- Forgiveness
+- Mary
+- State of Grace Explained
+- Stewardship
+- Generational Blessings and Curses
+- Seared Conscience Curses and Occult Practices
+
+### Prayer Life
+
+- Prayer Life Index
+- Journal Index
+- Divine Intimacy Index
+- Liturgy Index
+- Prayer Index
+- Rosary Index
+
+### Apologetics
+
+- Apologetics Index
+- Catholic Responses
+- Second Temple Groups - Sadducees Pharisees Essenes
+- Ancient Israelites and Judaism
+- Prayer, Veneration, Zechut, and Intercession Jewish Roots and Catholic Continuity
+- Intercession, Merit, and the Righteous Jewish Roots and Catholic Fulfillment
+- Why is mass on sunday and why some say its pagan
+
+### Systems and Outputs
+
+- Systems & Outputs Index
+- Blog Drafts Index
+- Apologetics Drafts Index
+- Instagram Comments Index
+- Writing Seeds Index
+- Systems Index
+- Templates Index
+
+---
+
+## Current Cleanup Audits
+
+Cleanup audits live in:
+
+```text
+05 Systems & Outputs/Cleanup Logs/
+```
+
+Current audit notes:
+
+- `Divine Intimacy - Duplicate and Review Audit.md`
+- `Prayer Life - Cleanup Audit.md`
+
+These audits are review documents only. They should not trigger deletion by themselves.
+
+### Current Review Items
+
+Divine Intimacy title review:
+
+- `DI 155 - Needs Title Review.md`
+- `DI 156 - Needs Title Review.md`
+
+Divine Intimacy duplicate review:
+
+- `Divine Intimacy 2026 Daily Planner - Legacy Duplicate Review.md`
+
+Unclear religious note review:
+
+- `99 Archive/Needs Review/Unclear Religious Notes/Trowel and Tear - religious dogma.md`
+
 ---
 
 ## Template Foundation
@@ -393,7 +564,9 @@ Current templates:
 
 ---
 
-## Active Naming Convention
+## Active Naming Conventions
+
+### Bible Chapter Notes
 
 The active chapter-note naming pattern is:
 
@@ -413,25 +586,52 @@ Examples:
 - 2 Kings 25 - Chapter Study.md
 - 1 Chronicles 29 - Chapter Study.md
 
-Other note examples:
+### Divine Intimacy Study Plans
 
-- Genesis Overview.md
-- Ruth Introduction.md
-- 2 Samuel Highlights.md
-- Exodus Highlight Guide.md
-- 1 Kings 03 - Devotional.md
-- Genesis 02-18 - Verse Note.md
-- Exodus 13-02 and 13-13 - Verse Note.md
-- Kings - Top Chapters.md
-- Samuel Books Overview.md
-- Psalms Prayer Map.md
-- Romans 11 - Study Note.md
+```text
+Divine Intimacy Study Plan - Month-Range.md
+```
 
-### Naming Rules
+Examples:
 
-- Use two-digit chapter numbers.
-- Keep note type at the end.
+- Divine Intimacy Study Plan - June-July.md
+- Divine Intimacy Study Plan - August-September.md
+- Divine Intimacy Study Plan - October-November.md
+- Divine Intimacy Study Plan - December.md
+
+### Divine Intimacy Numbered Notes
+
+```text
+DI 000 - Title.md
+```
+
+Examples:
+
+- DI 153 - Aridity.md
+- DI 154 - The Good Shepherd.md
+- DI 157 - Aridity and Contemplation.md
+- DI 161 - God's Pilgrims.md
+- DI 162 - The Practice of the Presence of God.md
+- DI 163 - The Spirit of Faith.md
+
+### Prayer Notes
+
+Prayer notes now use readable titles with spaces and optional subtitle separators.
+
+Examples:
+
+- Angels in Judaism - Belief Liturgy and Prayer.md
+- Catholic Prayer Forms - Devotions and Spiritual Defense.md
+- Melitz Yosher - Righteous Advocacy.md
+- Personal Prayers.md
+
+### General Naming Rules
+
+- Use two-digit chapter numbers for Bible chapter notes.
+- Keep note type at the end when useful.
 - Avoid vague titles like Notes, Highlights, or Chapter unless the book name makes it specific.
+- Use readable titles with spaces instead of underscores.
+- Use `Main Topic - Clarifying Subtitle` when helpful.
 - Use consistent capitalization.
 - Archive older duplicates before deleting.
 - Prefer clarity over cleverness.
@@ -465,9 +665,13 @@ The project uses a four-color Bible highlighting system.
 | Theme Note | Tracks ideas like covenant, sacrifice, wisdom, sin, and grace |
 | Doctrine Note | Connects Scripture to Catholic teaching |
 | Prayer Reflection | Turns study into prayer and devotion |
+| Divine Intimacy Note | Daily spiritual formation, Carmelite reflection, and practice |
+| Liturgy Note | Readings, feast days, seasons, and public prayer of the Church |
+| Apologetics Note | Clear defense or explanation of Catholic teaching |
 | Writing Seed | Turns study into future blog, comment, teaching, or apologetics output |
 | Index Note | Helps navigate related notes |
 | Template Note | Provides repeatable structure for future study |
+| Cleanup Audit | Tracks review items without moving or deleting them |
 
 ---
 
@@ -497,26 +701,43 @@ The project uses a four-color Bible highlighting system.
 | 2R | Template Integration and Workflow Wiring | Complete |
 | 2S | Root-Level Bible Study Classification | Complete |
 | 2T | Wisdom Books and New Testament Indexes | Complete |
-| 2U | README Flowchart Sync | Current |
+| 2U | README Flowchart Sync | Complete |
+| 2V | Dashboard and PROJECT_CONTEXT Workflow Sync | Complete |
+| 2W | Prayer Life Index and Catholic Teaching Index | Complete |
+| 2X | Apologetics Index and Writing Output Index | Complete |
+| 2Y | Inbox Classification | Complete |
+| 2Z | Index Refresh After Inbox Classification | Complete |
+| 3A | Divine Intimacy Note Name Cleanup | Complete |
+| 3B | Refresh Divine Intimacy Index After Rename | Complete |
+| 3C | Divine Intimacy Duplicate and Needs Review Audit | Complete |
+| 3D | Prayer Life Note Cleanup Audit | Complete |
+| 3E | Prayer Note Name Cleanup | Complete |
 
 ---
 
 ## Next Phase
 
-## Phase 2V — Dashboard and PROJECT_CONTEXT Flowchart Sync
+## Phase 3F — Liturgy Note Name Cleanup
 
-The next phase should update the two core navigation notes with the same visual flow logic now added to this README:
+The next phase should clean the obvious Liturgy note names.
 
-- `07 Indexes & Maps/Bible Study Dashboard.md`
-- `07 Indexes & Maps/PROJECT_CONTEXT.md`
+Target folder:
 
-Recommended tasks:
+```text
+03 Prayer Life/Liturgy/
+```
 
-- Add a compact Sacred Study Pipeline flowchart to the dashboard.
-- Add a Bible section map to the dashboard.
-- Add a template workflow section.
-- Add a maintenance flow section.
-- Update PROJECT_CONTEXT so it matches the README state.
+Current notes to review:
+
+- Liturgy of the Hours Invitatory for Wednesday in the 4th.md
+- Today’s Readings — June 19, 2026.md
+- Transfiguration and Tabernacles.md
+
+Recommended future naming direction:
+
+- Liturgy of the Hours - Invitatory Wednesday Week 4.md
+- Readings - 2026-06-19.md
+- Feast - Transfiguration and Tabernacles.md
 
 ---
 
@@ -527,8 +748,12 @@ These are not problems. They are simply known gaps in the current vault.
 - `1 Samuel 06 - Chapter Study.md` does not currently exist.
 - `1 Chronicles 16` through `1 Chronicles 20` do not currently exist.
 - `2 Chronicles` currently has a highlights note and index, but no chapter study notes in the current snapshot.
-- `00 Inbox` still contains raw notes that need future review.
-- Templates exist and are indexed, but dashboard and project context can still be improved with stronger workflow instructions.
+- `DI 155 - Needs Title Review.md` needs its exact meditation title confirmed.
+- `DI 156 - Needs Title Review.md` needs its exact meditation title confirmed.
+- `Divine Intimacy 2026 Daily Planner - Legacy Duplicate Review.md` needs duplicate comparison.
+- Some long Prayer Life, Liturgy, Rosary, and journal titles still need future review.
+- The Inbox folder exists but is currently drained of markdown notes after classification.
+- README, Dashboard, and PROJECT_CONTEXT should be kept in sync after major phases.
 
 ---
 
@@ -543,6 +768,8 @@ These are not problems. They are simply known gaps in the current vault.
 - Re-export file and folder snapshots after each major phase.
 - Prefer `mv -n` when renaming.
 - Prefer `mkdir -p` when creating folders.
+- Use cleanup audits before renaming uncertain notes.
+- Use archive locations for duplicates instead of deleting immediately.
 
 ---
 
@@ -554,6 +781,7 @@ Current archive review folders include:
 - `99 Archive/Needs Review/Chapter Naming`
 - `99 Archive/Needs Review/Generated Content`
 - `99 Archive/Needs Review/Possible Duplicates`
+- `99 Archive/Needs Review/Unclear Religious Notes`
 - `99 Archive/Old Highlight Notes`
 - `99 Archive/Unsorted Legacy Notes`
 
@@ -567,6 +795,7 @@ Current archive review folders include:
 - Rename messy files.
 - Move notes to the right folders.
 - Update Bible book indexes.
+- Update Prayer Life and Catholic Teaching indexes when needed.
 - Archive duplicates.
 - Review backlinks.
 - Choose one note to polish.
@@ -578,6 +807,7 @@ Current archive review folders include:
 - Update templates.
 - Refine indexes.
 - Merge overlapping notes.
+- Review cleanup audits.
 - Choose one theological writing piece to develop.
 
 ---
@@ -611,10 +841,16 @@ Useful Obsidian features and plugins for this project:
 - `#theme-note`
 - `#doctrine-note`
 - `#prayer-reflection`
+- `#divine-intimacy`
+- `#liturgy`
+- `#rosary`
+- `#apologetics`
 - `#writing-seed`
 - `#blog-draft`
 - `#needs-review`
+- `#duplicate-review`
 - `#archive-candidate`
+- `#cleanup-audit`
 
 ---
 
@@ -644,6 +880,7 @@ Apologetics = the defense wall
 Systems and Outputs = the workshop
 Indexes and Maps = the front door
 Templates = the tools of the craftsman
+Cleanup Audits = the restoration ledger
 Archive = the preserved stonework
 ```
 
